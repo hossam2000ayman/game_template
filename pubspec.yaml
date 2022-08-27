@@ -1,0 +1,61 @@
+name: game_template
+description: A new Flutter project.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  audioplayers: ^0.20.1
+  go_router: ^3.0.1
+  logging: ^1.0.2
+  provider: ^6.0.2
+  shared_preferences: ^2.0.13
+  firebase_crashlytics: ^2.8.9
+  firebase_core: ^1.21.1
+
+  games_services: ^2.0.7   #Achievements and leaderboard
+  google_mobile_ads: ^1.1.0   # Ads
+  in_app_purchase: ^3.0.1     #In-app Purchase
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.9.2
+  test: ^1.19.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/music/
+    - assets/sfx/
+
+
+  fonts:
+    - family: Schyler
+      fonts:
+        - asset: assets/Permanent_Marker/PermanentMarker-Regular.ttf
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon-adaptive-foreground.png"
